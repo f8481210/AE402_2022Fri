@@ -24,7 +24,6 @@ soup = BeautifulSoup(res.text,"html.parser")
 
 #印前10資料
 for i in range(10):
-    time = soup.find_all('',class_="train-number")[i]
     trainNumber = soup.find_all('ul',class_="train-number")[i]
     if trainNumber:
         for each_a in trainNumber:
